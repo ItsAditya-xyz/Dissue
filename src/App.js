@@ -6,6 +6,7 @@ import ProfileState from "./utils/Context/ProfileState";
 import { useEffect } from "react";
 import { useContext } from "react";
 import PorifleContext from "./utils/Context/ProfileContext";
+import Spread from "./Components/Spreadsheet";
 
 function App() {
   const ProfileContextValue = useContext(PorifleContext);
@@ -24,6 +25,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<Home />} />
+            <Route path="/spreadsheet" element={<Spread />} />
           </Routes>
         </BrowserRouter>
       </ProfileState>
