@@ -6,10 +6,12 @@ import copies from "../../assets/copies.png";
 import fun from "../../assets/fun.png";
 import transparency from "../../assets/transparency.png";
 import forever from "../../assets/forever.png";
+import Spread from "../../Components/Spreadsheet";
 const Home = () => {
   return (
     <>
       <Navbar showLogin={true} />
+      <Spread />
 
       <div className='relative inline-flex justify-center rounded-full items-center w-full mt-24 mb-4 px-2 '>
         <div className='relative text-4xl md:pt-10 font-bold text-gray-800 text-center  sm:text-4xl lg:text-6xl leading-normal rounded-full z-10 md:w-3/4'>
